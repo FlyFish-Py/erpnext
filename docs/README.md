@@ -16,3 +16,7 @@
 ### 部署
 
 - [测试环境部署文档](deployment/test-environment-setup.md) — 2026-07-02，Debian 13 / frappe v16 / ERPNext v16.26（fork version-16 分支），含完整步骤与 10 条踩坑记录
+
+### 技术方案
+
+- [补全 ERPNext 中文翻译](technical/2026-07-02-complete-zh-translations.md) — 2026-07-02，zh.po 覆盖率 84.5% → 100%（1544 条），含术语约定与部署步骤
