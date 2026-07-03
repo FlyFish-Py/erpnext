@@ -27,6 +27,7 @@
 
 - [补全 ERPNext 中文翻译](technical/2026-07-02-complete-zh-translations.md) — 2026-07-02，zh.po 覆盖率 84.5% → 100%（1544 条），含术语约定与部署步骤
 - [REQ-001 默认密码策略实现](technical/2026-07-03-default-password-policy.md) — 2026-07-03，mingda 应用首个功能：hooks 挂载点设计、核心机制核对、测试用例
+- [模块名补翻与"明达翻译通道"](technical/2026-07-03-mingda-translation-channel.md) — 2026-07-03，确立框架层翻译修补的标准通道（mingda 自带 zh.po 覆盖，无需 fork frappe）
 
 ### Bug 修复
 

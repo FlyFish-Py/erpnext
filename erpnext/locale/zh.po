@@ -62179,3 +62179,16 @@ msgstr "{} {} 已经关联了 {} {}"
 msgid "{} {} is not affecting bank account {}"
 msgstr "{} {}未影响银行账户{}"
 
+
+# ---- 明达补充词条：模块名（不在上游 POT 中，重新生成 po 时需保留）----
+msgid "Utilities"
+msgstr "实用工具"
+
+msgid "ERPNext Integrations"
+msgstr "ERPNext 集成"
+
+msgid "Telephony"
+msgstr "电话"
+
+msgid "Bulk Transaction"
+msgstr "批量交易"
