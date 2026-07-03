@@ -35,6 +35,8 @@
 | uv | 0.11.26 | pipx 安装，负责 venv 和 Python 3.14 |
 | frappe 框架 | v16.25.0（version-16 分支） | 官方仓库 frappe/frappe |
 | ERPNext | v16.26.1（version-16 分支） | **二开 fork：FlyFish-Py/erpnext** |
+| Frappe HR (hrms) | v16.9.x（version-16 分支） | 官方仓库，2026-07-03 加装（人力资源/工资） |
+| mingda | 0.0.1 | **二开自定义应用：FlyFish-Py/mingda**，2026-07-03 加装 |
 | yarn | 1.22.22 | npm 全局安装 |
 
 ### 1.3 站点信息
@@ -295,7 +297,16 @@ bench restart
 
 ---
 
-## 6. 待办事项
+## 6. 环境变更记录
+
+| 日期 | 变更 |
+|---|---|
+| 2026-07-03 | 配置发件邮箱账户 `erp@mingda-mail.com`（Resend SMTP：smtp.resend.com:465 SSL，登录名固定 `resend`，密码为 API Key）；收信为 Cloudflare Email Routing 转发 |
+| 2026-07-03 | `set-config host_name "http://183.249.172.67:18080"`（邮件链接使用公网地址） |
+| 2026-07-03 | 安装自定义应用 **mingda**（REQ-001 默认密码策略），修复 BUG-001/BUG-002 |
+| 2026-07-03 | 安装 **hrms** version-16（人力资源 + 工资管理工作区） |
+
+## 7. 待办事项
 
 | 事项 | 说明 | 优先级 |
 |---|---|---|
