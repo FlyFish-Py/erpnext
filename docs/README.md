@@ -9,7 +9,7 @@
 | `deployment/` | 环境与部署文档 | ✅ 使用中 |
 | `requirements/` | 需求文档（每个需求一份） | ✅ 使用中 |
 | `technical/` | 技术方案设计 | ✅ 使用中 |
-| `bugfixes/` | Bug 修复记录（每个 Bug 一份） | 待首个 Bug 创建 |
+| `bugfixes/` | Bug 修复记录（每个 Bug 一份） | ✅ 使用中 |
 
 > 二开代码仓库：定制逻辑统一放在自定义应用 [FlyFish-Py/mingda](https://github.com/FlyFish-Py/mingda)，不修改 erpnext/frappe 核心。
 
@@ -27,3 +27,7 @@
 
 - [补全 ERPNext 中文翻译](technical/2026-07-02-complete-zh-translations.md) — 2026-07-02，zh.po 覆盖率 84.5% → 100%（1544 条），含术语约定与部署步骤
 - [REQ-001 默认密码策略实现](technical/2026-07-03-default-password-policy.md) — 2026-07-03，mingda 应用首个功能：hooks 挂载点设计、核心机制核对、测试用例
+
+### Bug 修复
+
+- [BUG-001 安装 mingda 后全站 500](bugfixes/2026-07-03-BUG-001-install-patch-not-run.md) — 2026-07-03，全新安装不执行 patches 导致字段缺失 + auth 钩子无防御；含两条后续二开通用规则
