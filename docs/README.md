@@ -7,9 +7,11 @@
 | 目录 | 用途 | 状态 |
 |---|---|---|
 | `deployment/` | 环境与部署文档 | ✅ 使用中 |
-| `requirements/` | 需求文档（每个需求一份） | 待首个需求创建 |
-| `technical/` | 技术方案设计 | 待首个需求创建 |
+| `requirements/` | 需求文档（每个需求一份） | ✅ 使用中 |
+| `technical/` | 技术方案设计 | ✅ 使用中 |
 | `bugfixes/` | Bug 修复记录（每个 Bug 一份） | 待首个 Bug 创建 |
+
+> 二开代码仓库：定制逻辑统一放在自定义应用 [FlyFish-Py/mingda](https://github.com/FlyFish-Py/mingda)，不修改 erpnext/frappe 核心。
 
 ## 文档列表
 
@@ -17,6 +19,11 @@
 
 - [测试环境部署文档](deployment/test-environment-setup.md) — 2026-07-02，Debian 13 / frappe v16 / ERPNext v16.26（fork version-16 分支），含完整步骤与 10 条踩坑记录
 
+### 需求
+
+- [REQ-001 新账号默认密码与首登强制改密](requirements/2026-07-03-default-password-policy.md) — 2026-07-03，全员默认密码 123456、不发欢迎邮件、首次登录强制改密
+
 ### 技术方案
 
 - [补全 ERPNext 中文翻译](technical/2026-07-02-complete-zh-translations.md) — 2026-07-02，zh.po 覆盖率 84.5% → 100%（1544 条），含术语约定与部署步骤
+- [REQ-001 默认密码策略实现](technical/2026-07-03-default-password-policy.md) — 2026-07-03，mingda 应用首个功能：hooks 挂载点设计、核心机制核对、测试用例
