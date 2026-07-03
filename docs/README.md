@@ -33,3 +33,4 @@
 
 - [BUG-001 安装 mingda 后全站 500](bugfixes/2026-07-03-BUG-001-install-patch-not-run.md) — 2026-07-03，全新安装不执行 patches 导致字段缺失 + auth 钩子无防御；含两条后续二开通用规则
 - [BUG-002 登录后跳转报 301 未捕获异常](bugfixes/2026-07-03-BUG-002-redirect-uncaught-exception.md) — 2026-07-03，auth 阶段重定向必须用 werkzeug HTTPException，frappe.Redirect 仅限页面渲染上下文
+- [BUG-003 列表列翻译被懒加载脚本覆盖](bugfixes/2026-07-03-BUG-003-listview-settings-overwritten.md) — 2026-07-03，listview_settings 增强需用 defineProperty 访问器合并，不能依赖注册时序
